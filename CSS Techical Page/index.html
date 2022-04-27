@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Page</title>
+</head>
+<body>
+<nav id="navbar">
+        <header>CSS</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Color" class="nav-link">Color</a></li>
+            <li><a href="#Border" class="nav-link">Border</a></li>
+            <li><a href="#Background" class="nav-link">Background</a></li>
+            <li><a href="#Margin" class="nav-link">Margin</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>CSS is a language used to style a webpage. It stands for Cascading Style Sheets. It describes how html elements are to be displayed on screen and other media. It includes designs, layout, and dsiplay for different devices.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Color">
+            <header>Color</header>
+            <article>
+                <p><span>Colors</span> are specified using color names or RGB, HSL, HEX, RGBA, HSLA values.</p>
+                <p>We have CSS Background color, Text color, Border COlor, Color Values</p>
+                <code>
+                    <h1 style="background-color:tomato; ">Hello World</h1>
+                    <h1 style="color:darkorange;">Hello World</h1>
+                    <h1 style="border:2px solid Violet;">Hello World</h1>
+                </code>
+               <p>Color values could either be rgb(205, 78, 18) or #ffffff or hsl(12, 50%, 87%)</p>
+               <p>Opacity can be added to the colors. This defines how the color will appear more or less.</p>
+     
+            </article>
+        </section>
+        <section class="main-section" id="Border">
+            <header>Border</header>
+            <article>
+                <p>CSS <span>Borders</span> allow to specify the width, style and color of an elemet's border. The Border-Style property specifies what kind of border style to show. Below are some of the properties and many more</p>
+                <ul>
+                    <li>Dotted - defines a dotted border</li>
+                    <li>Dashed - defines a dashed border</li>
+                    <li>Inset - gives a 3D inset border depending on the value given</li>
+                    <li>Outset - gives a 3D outset border depending on the given value</li>
+                </ul>
+                <code>
+                    h1.dotted {border-style: dotted;}
+                    h1.inset {border-style: inset;}
+                    h1.dashed {border-style: dashed;}
+                    h1.double {border-style: double;}
+                    h1.groove {border-style: groove;}
+                    h1.ridge {border-style: ridge;}
+                </code>
+                Result:
+                <code>
+                    <h1 style="border-style: dotted; ">Dotted</h1>
+                    <h1 style="border-style: inset;">Inset</h1>
+                    <h1 style="border-style: dashed;">Dashed</h1>
+                    <h1 style="border-style: outset;">Outset</h1>
+                    <h1 style="border-style: double;">Double</h1>
+                    <h1 style="border-style: ridge;">Ridge</h1>
+                    <h1 style="border-style: groove;">Groove</h1>
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Background">
+            <header>Background</header>
+            <article>
+                <p>The <span>background</span> property is used to add Background effect for elements. It could be a background color or an image. You can set the color of a page to any color or you can decide to add an image instead. One can also decide to add opacity to the colors and image to give another effect. </p>
+                <code>
+                    body {
+                        background-color: chocolate;
+                    }
+                    div {
+                        background: rgba(231, 42, 8, 0.3) /* Red background with 30% opacity */
+                      }
+                      body {
+                        background-image: url("paper.gif");
+                      }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Margin">
+            <header>Margin</header>
+            <article>
+                <p>
+                    The CSS <span >margin </span> property is used to create space around elements, outside of the element border. The margins are set for each side of an element (top, right, bottom and left). That is 
+                </p>
+                <ul>
+                    <li>Margin-top</li>
+                    <li>Margin-bottom</li>
+                    <li>Margin-left</li>
+                   <li>Margin-right </li>
+                </ul>
+                <code>
+                    p {
+                        Margin-bottom: 25px;
+                        margin-top: 20px;
+                        margin-left: 45px;
+                        margin-right: 10px;
+                    }
+                </code>
+                Result:
+                <code>
+                    <h1 style="margin-top: 20px; margin-bottom: 25px; margin-left: 45px; margin-right: 10px;">Check out the margin</h1>
+                </code>
+<p>
+                   All margin properties can have different values like %, auto, inherit, length(px, pt, cm)
+               </p>
+              <p><b>TIP:</b> Negative values are not allowed</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    color: rgb(20, 20, 20);
+    background-color: white;
+    font-family: "Baloo Tammudu 2";
+}
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 250px;
+    border-right: 5px solid gray;
+    background-color: indigo;
+}
+#navbar ul {
+    padding: 0;
+    height: 100%;
+}
+#navbar li {
+    list-style: none;
+    color: white;
+    width: 100%;
+    position: relative;
+    border-top: 2px solid grey;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+#navbar header {
+    color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+    font-size: 19px;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+}
+#main-doc header {
+    font-size: 29px;
+    margin: 0;
+}
+
+code {
+    background-color: whitesmoke;
+    border-left: 5px solid blueviolet;
+    text-align: center;
+    margin:  5px 10px;
+    padding:  8px 10px;
+    color: black;
+    display: block;
+    white-space: pre-line;
+    font-size: 20px;
+}
+section article {
+    margin: 10px;
+}
+p {
+    font-size: 20px;
+}
+li {
+    font-size: 19px;
+}
+span {
+    color: rgba(47, 27, 228, 1); 
+    border-radius: 50px;
+    border: 3px solid orangered;
+    padding: 2px;
+}
+@media only screen and (max-width: 850px) { 
+    #navbar{
+        z-index: 1;
+        margin: 0;
+        top: 0;
+        padding: 0;
+        position: fixed;
+        height: 200px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+    }
+
+    #navbar ul {
+        /* height: 200px; */
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 200px;
+    }
+}
